@@ -4,6 +4,10 @@ A sleek, responsive web application to explore and compare GitHub user profiles.
 
 ---
 
+## 🚀 Live Demo
+
+[View the app on Vercel](https://github-profile-visualizer-six.vercel.app/)
+
 ## ✨ Features
 
 - 🔍 **View detailed GitHub user profiles**
