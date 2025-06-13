@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  color-scheme: light dark;
+}
+
+/* For both light and dark mode */
+.scrollbar-custom {
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e0 #edf2f7; /* thumb and track for light mode */
+}
+
+/* For WebKit browsers (Chrome, Edge, Safari) */
+.scrollbar-custom::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: #edf2f7; /* light gray */
+}
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background-color: #cbd5e0; /* medium gray */
+  border-radius: 10px;
+  border: 2px solid #edf2f7;
+}
+
+/* Dark mode styles */
+.dark .scrollbar-custom {
+  scrollbar-color: #718096 #2d3748; /* thumb and track for dark mode */
+}
+.dark .scrollbar-custom::-webkit-scrollbar-track {
+  background: #2d3748;
+}
+.dark .scrollbar-custom::-webkit-scrollbar-thumb {
+  background-color: #718096;
+  border: 2px solid #2d3748;
+}
